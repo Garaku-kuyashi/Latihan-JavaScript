@@ -53,7 +53,7 @@ console.log(float, typeof float)
 
 console.log("")
 //mengubah menjadi bool
-let bool1 = Boolean(0)
+let bool1 = Boolean(1)
 console.log(bool1, typeof bool1)
 
 console.log("")

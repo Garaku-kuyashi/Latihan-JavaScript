@@ -1,3 +1,2 @@
-let j = 7
-// let k = 4
-// console.log(j > k)
+let a = "Theresa adalah My Bini My Queen My Life"
+console.log(a.indexOf("Bini"))
