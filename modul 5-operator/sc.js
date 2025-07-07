@@ -81,9 +81,9 @@
 // console.log(j != k)
 
 // !== mengecek atau membandingkan ketidaksamaan nilai dan tipe data variabel
-let j = "7"
-let k = 7
-console.log(j !== k)
+// let j = "7"
+// let k = 7
+// console.log(j !== k)
 
 // > lebih dari
 // let j = 7

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="teks">Halo</h1>
+    <h2>apa kabar</h2>
+    <p class="tek">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure beatae ipsum ex aperiam doloribus quos cum labore repellendus a.</p>
+    <p class="tek">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure beatae ipsum ex aperiam doloribus quos cum labore repellendus a.</p>
+    <ul>
+
+        <li class="tek">bini 1</li>
+        <li>bini 2</li>
+        <li>bini 3</li>
+    </ul>
+
+    <script >
+        console.log(document.querySelectorAll('li'))
+        let list = document.querySelectorAll('li')
+        list[0].style.color = 'red'
+        
+        const teks = document.getElementById('teks')//untuk mengakses dukomen berdasarkan id
+        console.log(teks)
+
+        const tek = document.getElementsByClassName('tek')//untuk mengakses dukomen berdasarkan class name
+        console.log(tek)
+
+        const l = document.getElementsByTagName('li')//untuk mengakses dukomen berdasarkan tag name
+        console.log(l)
+
+        const e = document.querySelectorAll('li.tek')//untuk men select dokumen berdasarkan tag name, id, dan class name
+        console.log(e)
+
+    </script>
+</body>
+</html>

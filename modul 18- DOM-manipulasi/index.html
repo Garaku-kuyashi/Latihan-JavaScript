@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-red{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>title</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+
+    </div>
+    <p id="para">ini paragraf</p>
+    <ul>
+        <li>ini item 1</li>
+        <li>ini item 2</li>
+        <li>ini item 3</li>
+    </ul>
+
+    <script>
+        //mengubah konten: textContent dan innerHTML
+        const para = document.getElementById('para')
+        // console.log(para)
+        para.textContent = 'ini teks'//maka hasil di web akan berubah menjadi ini teks
+        para.innerHTML = "ini para dengan inner html"
+
+        //mengubah atribut: element.setAttribute(attribute, value)
+        const par = document.getElementById(para)
+        para.setAttribute('class', 'bg-red')
+
+        //mengubah style atau gaya: element.style.property = value
+        const li = document.querySelectorAll('li')
+        li[2].style.fontSize = '20px'
+    </script>
+</body>
+</html>
