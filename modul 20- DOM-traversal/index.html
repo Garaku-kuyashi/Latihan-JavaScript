@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-red{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+        <h1>title</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+    
+    <p id="para">ini paragraf</p>
+    <ul id="list">
+        <li id="1">ini item 1</li>
+        <li id="2">ini item 2</li>
+        <li id="3">ini item 3</li>
+    </ul>
+
+    <script>
+        //mencari parrent: parentNode
+        const item1 = document.getElementById('1')
+        console.log(item1.parentNode)
+        
+        //mendapatkan nodelist dari semua anak elemen: childNode
+        const child = document.getElementById('list')
+        console.log(child.childNodes)
+        console.log(child.children)
+        console.log(child.firstChild)
+        console.log(child.firstElementChild)
+        console.log(child.lastChild)
+        console.log(child.lastElementChild)
+        
+        //mendapatkan elemen saudara berikutnya/ sebelumnya:nextSibiling/previousSibling
+        console.log(item1.nextSibling)
+        console.log(item1.nextElementSibling)
+        const item2 = document.getElementById('2')
+        console.log(item2.previousSibling)
+        console.log(item2.previousElementSibling)
+    </script>
+</body>
+</html>

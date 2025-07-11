@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-red{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+        <h1 id="title">title</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        
+        <ul id="lis">
+            <li>1</li>
+            <li id="2">2</li>
+            <li>3</li>
+        </ul>
+    <script>
+
+        //menambah
+        const newdiv = document.createElement('div')
+        newdiv.textContent = 'ini div baru'
+
+        // document.body.appendChild(newdiv)
+        //appendchild akan muncul di bagian bawah
+
+        const title = document.getElementById('title')
+        document.body.insertBefore(newdiv, title)
+
+        //contoh lain
+        const list  = document.createElement('li')
+        list.textContent = "halo ini list ke 4"
+        const parents = document.getElementById('lis')
+        // parents.appendChild(list)
+        const insert = document.getElementById('2')
+        parents.insertBefore(list, insert)// contoh penggunaan insert before: yang dimana kita bisa memilih di mana letak panambahannya 
+        
+
+        //menghapus
+        // document.body.removeChild(title )
+        // parents.removeChild(insert)
+
+        //menghapus seluruh elemen
+        title.remove()// memilih apa yang ingin dihapus( title adalah nama atribut yang sudah kita const di atas)
+        document.body.remove()// mengghapus selruh isi body awkwokwowkokwokwok
+
+    </script>
+</body>
+</html>
